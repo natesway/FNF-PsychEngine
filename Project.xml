@@ -59,8 +59,8 @@
 	<define name="CRASH_HANDLER" if="desktop release" />
 
 	<!-- Preload Assets -->
-	<define name="PRELOAD_ALL" unless="web" />
-	<define name="NO_PRELOAD_ALL" unless="PRELOAD_ALL"/>
+	<!--<define name="PRELOAD_ALL" unless="web" />-->
+	<define name="NO_PRELOAD_ALL" unless="desktop"/>
 
 	<assets path="assets/fonts" />
 	<assets path="assets/preload" rename="assets" exclude="*.ogg" if="web"/>
@@ -71,7 +71,7 @@
 	</section>
 
 	<!-- DONT ENABLE THIS -->
-	<define name="CHECK_FOR_UPDATES" if="desktop officialBuild"/>
+	<define name="CHECK_FOR_UPDATES" if="desktop release"/>
 
 	<!-- Week Assets -->
 	<library name="videos"        preload="true" />
