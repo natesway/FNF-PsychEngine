@@ -1,5 +1,16 @@
-# Friday Night Funkin' - Psych Engine
-Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
+# Friday Night Funkin' - Shattered Engine
+Engine Based on [Psych Engine 0.7.1h](https://github.com/ShadowMario/FNF-PsychEngine), intended to be on mods like Vs. Swedesmen.
+
+## Upcomming/Planned features
+- [ ] Linux MP4 support
+- [ ] Loading screen
+- [ ] 32 Bit PC support
+- [ ] \(Maybe) MacOS support
+- [ ] The actual mod
+- [ ] Several other features
+- [x] Intro text
+- [ ] Everything else
+- [x] Losing my sanity
 
 ## Installation:
 You must have [Haxe version 4.2.5](https://haxe.org/download/version/4.2.5/), seriously, stop using older or newer versions, it won't work!
@@ -12,20 +23,25 @@ If the compiler gives an error saying that hxCodec cannot be found read this iss
 
 ## Customization:
 
-if you wish to disable things like *Lua Scripts* or *Video Cutscenes*, you can read over to `Project.xml`
+if you wish to disable things like *Lua Scripts*, you can read over to `Project.xml`
 
 inside `Project.xml`, you will find several variables to customize Psych Engine to your liking
 
-to start you off, disabling Videos should be simple, simply Delete the line `"VIDEOS_ALLOWED"` or comment it out by wrapping the line in XML-like comments, like this `<!-- YOUR_LINE_HERE -->`
+, disabling Videos should be simple, simply Delete the line `"VIDEOS_ALLOWED"` 
+to start you off, disabling *Lua Scripts* should be simple, simply Delete the line with `LUA_ALLOWED`, or comment it out by wrapping the line in XML-like comments, like this `<!-- YOUR_LINE_HERE -->`. This and other customization options are all available within the `Project.xml` file
 
-same goes for *Lua Scripts*, comment out or delete the line with `LUA_ALLOWED`, this and other customization options are all available within the `Project.xml` file
+## Shattered Engine Credits:
+* shatterstar9652 - Programmer
+* SimpleBridge - Artist
+* Google - Assistant Programmer
 
-## Credits:
-* Shadow Mario - Programmer
-* RiverOaken - Artist
-* Yoshubs - Assistant Programmer
+  
+## Psych Engine Credits:
+* Shadow Mario - Original Programmer
+* RiverOaken - Original Artist
+* Yoshubs - Original Assistant Programmer
 
-### Special Thanks
+### Psych Engine Special Thanks
 * bbpanzu - Ex-Programmer
 * Yoshubs - New Input System
 * SqirraRNG - Crash Handler and Base code for Chart Editor's Waveform
