@@ -7,10 +7,11 @@ Engine Based on [Psych Engine 0.7.1h](https://github.com/ShadowMario/FNF-PsychEn
 - [ ] 32 Bit PC support
 - [ ] \(Maybe) MacOS support
 - [ ] The actual mod
-- [ ] Several other features
 - [x] Intro text
 - [ ] Everything else
+- [ ] Gamejolt Intergration
 - [x] Losing my sanity
+- [ ] Several other features
 
 ## Installation:
 You must have [Haxe version 4.2.5](https://haxe.org/download/version/4.2.5/), seriously, stop using older or newer versions, it won't work!
