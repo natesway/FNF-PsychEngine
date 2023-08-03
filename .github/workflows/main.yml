@@ -93,6 +93,7 @@ jobs:
       - name: Compile
         run: haxelib run lime build windows -32 -release -D 32bits -D HXCPP_M32 --app-version="4.0.0-${{ github.run_id}}"
       - name: Publish Artifact
+        uses: actions/upload-artifact@v2.2.4
         with:
           name: Shattered-Engine-Windows32
           path: export/release/windows/bin
