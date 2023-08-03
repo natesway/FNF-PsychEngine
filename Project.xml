@@ -59,8 +59,8 @@
 	<define name="CRASH_HANDLER" if="desktop release" />
 
 	<!-- Preload Assets -->
-	<!--<define name="PRELOAD_ALL" unless="web" />-->
-	<define name="NO_PRELOAD_ALL" unless="desktop"/>
+	<define name="PRELOAD_ALL" unless="web"/>
+	<define name="NO_PRELOAD_ALL" unless="PRELOAD_ALL"/>
 
 	<assets path="assets/fonts" />
 	<assets path="assets/preload" rename="assets" exclude="*.ogg" if="web"/>
