@@ -196,7 +196,7 @@ class PlayState extends MusicBeatState
 	public var practiceMode:Bool = false;
 
 	public var botplaySine:Float = 0;
-	public var botplayTxt:FlxText;
+	//public var botplayTxt:FlxText;
 
 	public var iconP1:HealthIcon;
 	public var iconP2:HealthIcon;
@@ -545,15 +545,15 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.data.hideHud;
 		add(scoreTxt);
 
-		botplayTxt = new FlxText(400, timeBar.y + 55, FlxG.width - 800, "BOTPLAY", 32);
-		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		botplayTxt.scrollFactor.set();
-		botplayTxt.borderSize = 1.25;
-		botplayTxt.visible = cpuControlled;
-		add(botplayTxt);
-		if(ClientPrefs.data.downScroll) {
-			botplayTxt.y = timeBar.y - 78;
-		}
+		//botplayTxt = new FlxText(400, timeBar.y + 55, FlxG.width - 800, "BOTPLAY", 32);
+		//botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		//botplayTxt.scrollFactor.set();
+		//botplayTxt.borderSize = 1.25;
+		//botplayTxt.visible = cpuControlled;
+		//add(botplayTxt);
+		//if(ClientPrefs.data.downScroll) {
+			//botplayTxt.y = timeBar.y - 78;
+		//}
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
@@ -563,7 +563,7 @@ class PlayState extends MusicBeatState
 		iconP2.cameras = [camHUD];
 		scoreTxt.cameras = [camHUD];
 
-		botplayTxt.cameras = [camHUD];
+		//botplayTxt.cameras = [camHUD];
 		timeBar.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 
@@ -1610,10 +1610,10 @@ class PlayState extends MusicBeatState
 		setOnScripts('curDecStep', curDecStep);
 		setOnScripts('curDecBeat', curDecBeat);
 
-		if(botplayTxt != null && botplayTxt.visible) {
-			botplaySine += 180 * elapsed;
-			botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
-		}
+		//if(botplayTxt != null && botplayTxt.visible) {
+			//botplaySine += 180 * elapsed;
+			//botplayTxt.alpha = 1 - Math.sin((Math.PI * botplaySine) / 180);
+		//}
 
 		if (controls.PAUSE && startedCountdown && canPause)
 		{
@@ -1796,7 +1796,7 @@ class PlayState extends MusicBeatState
 		paused = true;
 
 		// 1 / 1000 chance for Gitaroo Man easter egg
-		/*if (FlxG.random.bool(0.1))
+		*if (FlxG.random.bool(0.1))
 		{
 			// gitaroo man easter egg
 			cancelMusicFadeTween();
@@ -2429,15 +2429,17 @@ class PlayState extends MusicBeatState
 		if(daRating.noteSplash && !note.noteSplashData.disabled)
 			spawnNoteSplashOnNote(note);
 
-		if(!practiceMode && !cpuControlled) {
+		//if(!practiceMode && !cpuControlled) {
 			songScore += score;
+			songHits++;
+			RecalculateRating();
 			if(!note.ratingDisabled)
 			{
 				songHits++;
 				totalPlayed++;
 				RecalculateRating(false);
 			}
-		}
+		//}
 
 		var uiPrefix:String = "";
 		var uiSuffix:String = '';
