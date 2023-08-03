@@ -114,10 +114,11 @@
 	<haxelib name="tjson" />
 	<haxedef name="openflPos" />
 	<haxedef name="hscriptPos" />
+		
 
 	<!-- Enables a terminal log prompt on debug builds -->
 	<haxelib name="hxcpp-debug-server" if="debug"/>
-	<haxedef name="HXC_LIBVLC_LOGGING" if="VIDEOS_ALLOWED debug" />
+	<haxedef name="HXC_LIBVLC_LOGGING" if="VIDEOS_ALLOWED release" />
 	
 	<!-- ______________________________ Haxedefines _____________________________ -->
 
@@ -146,7 +147,7 @@
 	<haxedef name="FLX_NO_FOCUS_LOST_SCREEN" />
 	
 	<!-- Show debug traces for hxCodec -->
-	<haxedef name="HXC_DEBUG_TRACE" if="debug" />
+	<haxedef name="HXC_DEBUG_TRACE" if="release" />
 	
 	<!--Disable the Flixel core debugger. Automatically gets set whenever you compile in release mode!-->
 	<haxedef name="FLX_NO_DEBUG" unless="debug" />
