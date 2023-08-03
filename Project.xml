@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': VS Swedesmen" file="VsSwedes" packageName="com.shatterstar9652.vsswedes" package="com.shatterstar9652.vsswedes" main="Main" version="0.0.1" company="shatterstar9652" />
+	<app title="Friday Night Funkin': VS Swedesmen" file="VsSwedes" packageName="com.shatterstar9652.vsswedes" package="com.shatterstar9652.vsswedes" main="Main" version="0.0.2" company="shatterstar9652" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -24,7 +24,7 @@
 	<define name="HSCRIPT_ALLOWED" if="desktop" />
 	<define name="LUA_ALLOWED" if="desktop" />
 	<define name="ACHIEVEMENTS_ALLOWED" />
-	<define name="VIDEOS_ALLOWED" if="windows || linux || android" unless="32bits"/>
+	<define name="VIDEOS_ALLOWED" if="windows || linux || android" />
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE WATERMARKS/DEV NAMES ON TITLE SCREEN -->
 	<define name="TITLE_SCREEN_EASTER_EGG" if="officialBuild"/> <!-- DELETE THE if="officialBuild" for enabling this on an unofficial build -->
 
