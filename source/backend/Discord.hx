@@ -14,7 +14,7 @@ class DiscordClient
 		details: "In the Menus",
 		state: null,
 		largeImageKey: 'icon',
-		largeImageText: "Psych Engine",
+		largeImageText: "Shattered Engine",
 		smallImageKey : null,
 		startTimestamp : null,
 		endTimestamp : null
