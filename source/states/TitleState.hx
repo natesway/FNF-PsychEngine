@@ -98,8 +98,8 @@ class TitleState extends MusicBeatState
 
 		#if CHECK_FOR_UPDATES
 		if(ClientPrefs.data.checkForUpdates && !closedState) {
-			trace('checking for update');
-			var http = new haxe.Http("https://raw.githubusercontent.com/ShadowMario/FNF-PsychEngine/main/gitVersion.txt");
+			trace('checking for updates');
+			var http = new haxe.Http("https://raw.githubusercontent.com/natesway/FNF-PsychEngine/main/gitVersion.txt");
 
 			http.onData = function (data:String)
 			{
@@ -564,15 +564,19 @@ class TitleState extends MusicBeatState
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
 					#if PSYCH_WATERMARKS
-					createCoolText(['Psych Engine by'], 40);
+					createCoolText(['Mod Developers'], 40);
 					#else
 					createCoolText(['ninjamuffin99', 'phantomArcade', 'kawaisprite', 'evilsk8er']);
 					#end
 				// credTextShit.visible = true;
 				case 4:
 					#if PSYCH_WATERMARKS
-					addMoreText('Shadow Mario', 40);
-					addMoreText('Riveren', 40);
+					addMoreText('shatterstar9652', 40);
+					addMoreText('Simplebridge', 40);
+					addMoreText('Swedishking2002', 40);
+					addMoreText('Colonel_Nock', 40);
+					addMoreText('Gamming Baggo', 40);
+					addMoreText('LostGemini', 40);
 					#else
 					addMoreText('present');
 					#end
