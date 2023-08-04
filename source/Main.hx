@@ -35,13 +35,8 @@ class Main extends Sprite
 		framerate: 60, // default framerate
 		skipSplash: true, // if the default flixel splash screen should be skipped
 		startFullscreen: false // if the game should start at fullscreen mode
-	};
-
-	public static var fpsVar:FPS;
-
-	public static var gjToastManager:GJToastManager //Toast For Advice
-
-	// You can pretty much ignore everything from here on - your code should go in your states.
+		public static var fpsVar:FPS;
+		public static var gjToastManager:GJToastManager; 
 
 	public static function main():Void
 	{
@@ -70,12 +65,13 @@ class Main extends Sprite
 		}
 
 		setupGame();
+
+		gjToastManager = new GJToastManager();
+		addChild(gjToastManager); //adding the toddler
 	}
 
 	private function setupGame():Void
 	{
-		gjToastManager = new GJToastManager();
-		addChild(gjToastManager); //adding the toddler
 		var stageWidth:Int = Lib.current.stage.stageWidth;
 		var stageHeight:Int = Lib.current.stage.stageHeight;
 
