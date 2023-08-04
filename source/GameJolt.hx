@@ -23,6 +23,8 @@ import openfl.display.BitmapData;
 import openfl.display.Sprite;
 import openfl.text.TextField;
 import openfl.text.TextFormat;
+import states.MainMenuState;
+import backend.Conductor;
 
 using StringTools;
 
@@ -296,7 +298,7 @@ class GameJoltLogin extends MusicBeatState {
 
 		trace("GJ Api Initialized? : " + Std.string(GJApi.initialized));
 		FlxG.mouse.visible = true;
-		Conductor.changeBPM(102);
+		Conductor.set_bpm(102);
 
 		var bg:FlxSprite = new FlxSprite().loadGraphic(bgImage);
 		bg.setGraphicSize(FlxG.width, FlxG.height);
@@ -410,7 +412,7 @@ class GameJoltLogin extends MusicBeatState {
 	function exit() {
 		FlxG.save.flush();
 		FlxG.mouse.visible = false;
-		MusicBeatState.switchState(new MainMenuState());
+		MusicBeatState.switchState(new states.MainMenuState());
 	}
 
 	function openLink(url:String) {
