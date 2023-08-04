@@ -2,6 +2,8 @@ package;
 
 import flixel.graphics.FlxGraphic;
 
+import GameJolt;
+import GameJolt.GameJoltAPI;
 import flixel.FlxGame;
 import flixel.FlxState;
 import openfl.Assets;
@@ -33,6 +35,7 @@ class Main extends Sprite
 		framerate: 60, // default framerate
 		skipSplash: true, // if the default flixel splash screen should be skipped
 		startFullscreen: false // if the game should start at fullscreen mode
+		public static var gjToastManager:GJToastManager; //Toast For Advice
 	};
 
 	public static var fpsVar:FPS;
@@ -70,6 +73,8 @@ class Main extends Sprite
 
 	private function setupGame():Void
 	{
+		gjToastManager = new GJToastManager();
+		addChild(gjToastManager); //adding the toddler
 		var stageWidth:Int = Lib.current.stage.stageWidth;
 		var stageHeight:Int = Lib.current.stage.stageHeight;
 
