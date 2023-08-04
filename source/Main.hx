@@ -35,8 +35,10 @@ class Main extends Sprite
 		framerate: 60, // default framerate
 		skipSplash: true, // if the default flixel splash screen should be skipped
 		startFullscreen: false // if the game should start at fullscreen mode
-		public static var fpsVar:FPS;
-		public static var gjToastManager:GJToastManager; 
+	};
+		
+	public static var fpsVar:FPS;
+	public static var gjToastManager:GJToastManager; 
 
 	public static function main():Void
 	{
