@@ -34,11 +34,12 @@ class Main extends Sprite
 		zoom: -1.0, // game state bounds
 		framerate: 60, // default framerate
 		skipSplash: true, // if the default flixel splash screen should be skipped
-		startFullscreen: false, // if the game should start at fullscreen mode
-		public static var gjToastManager:GJToastManager; //Toast For Advice
+		startFullscreen: false // if the game should start at fullscreen mode
 	};
 
 	public static var fpsVar:FPS;
+
+	public static var gjToastManager:GJToastManager //Toast For Advice
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
