@@ -76,6 +76,7 @@
       "ref": "main",
       "url": "https://github.com/TentaRJ/tentools"
     },
+    {
       "name": "systools",
       "type": "git",
       "dir": null,
