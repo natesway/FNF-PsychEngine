@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': VS Swedesmen" file="VsSwedes" packageName="com.shatterstar9652.vsswedes" package="com.shatterstar9652.vsswedes" main="Main" version="0.0.2" company="shatterstar9652" />
+	<app title="Friday Night Funkin': Shattered Engine" file="ShatteredEngine" packageName="com.shatterstar9652.shatteredengine" package="com.shatterstar9652.shatteredengine" main="Main" version="0.0.2" company="shatterstar9652" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -114,8 +114,10 @@
 	<haxelib name="tjson" />
 	<haxedef name="openflPos" />
 	<haxedef name="hscriptPos" />
+	<haxelib name="tentools" />
+	<haxelib name="systools" />
+	<ndll name="systools" haxelib="systools" />
 		
-
 	<!-- Enables a terminal log prompt on debug builds -->
 	<haxelib name="hxcpp-debug-server" if="debug"/>
 	<haxedef name="HXC_LIBVLC_LOGGING" if="VIDEOS_ALLOWED release" />
