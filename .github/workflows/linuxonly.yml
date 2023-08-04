@@ -30,10 +30,15 @@ jobs:
         run: |
           sudo apt-get install libvlc-dev
           sudo apt-get install libvlccore-dev
+          sudo apt-get install libvlc-bin
+          sudo apt-get install vlc-bin
+          sudo apt-get install libluajit-5.1-2
+          sudo apt-get install libluajit-5.1-dev
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null --quiet
           haxelib install hmm --quiet
           haxelib run hmm install
+          haxelib run lime rebuild systools linux
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
       - name: Compile
