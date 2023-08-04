@@ -1,8 +1,13 @@
 package states;
 
+import GameJolt;
+import GameJolt.GameJoltAPI;
 import backend.WeekData;
 import backend.Highscore;
 
+import flixel.FlxG;
+import flixel.FlxSprite;
+import flixel.FlxState;
 import flixel.input.keyboard.FlxKey;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.graphics.frames.FlxAtlasFrames;
@@ -25,6 +30,22 @@ import states.MainMenuState;
 import sys.FileSystem;
 import sys.io.File;
 #end
+
+import flixel.graphics.frames.FlxAtlasFrames;
+import flixel.graphics.frames.FlxFrame;
+import flixel.group.FlxGroup;
+import flixel.input.gamepad.FlxGamepad;
+import flixel.math.FlxMath;
+import flixel.math.FlxPoint;
+import flixel.math.FlxRect;
+import flixel.system.FlxSound;
+import flixel.system.ui.FlxSoundTray;
+import flixel.text.FlxText;
+import flixel.tweens.FlxEase;
+import flixel.tweens.FlxTween;
+import flixel.util.FlxColor;
+import flixel.util.FlxTimer;
+import lime.app.Application;
 
 typedef TitleData =
 {
@@ -76,9 +97,13 @@ class TitleState extends MusicBeatState
 
 	override public function create():Void
 	{
+		
 		Paths.clearStoredMemory();
 		Paths.clearUnusedMemory();
 
+		GameJoltAPI.connect();
+        	GameJoltAPI.authDaUser(FlxG.save.data.gjUser, FlxG.save.data.gjToken);
+		
 		#if LUA_ALLOWED
 		Mods.pushGlobalMods();
 		#end
