@@ -412,7 +412,7 @@ class GameJoltLogin extends MusicBeatState {
 	function exit() {
 		FlxG.save.flush();
 		FlxG.mouse.visible = false;
-		MusicBeatState.switchState(new states.MainMenuState());
+		MusicBeatState.switchState(new MainMenuState());
 	}
 
 	function openLink(url:String) {
