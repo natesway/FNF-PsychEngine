@@ -169,7 +169,7 @@ class GameJoltAPI // Connects to tentools.api.FlxGameJolt
 			if (formData != null)
 				retFormat += '\nExtra Data: $formData';
 
-			GJApi.addScore(score + "%20Points", score, tableID, false, null, formData, function(data:Map<String, String>) {
+			GJApi.addScore(score + "%20Points", score, 839566, false, null, formData, function(data:Map<String, String>) {
 				trace("Score submitted with a result of: " + data.get("success"));
 				Main.gjToastManager.createToast(GameJoltInfo.imagePath, "Score submitted!", retFormat, true);
 			});
