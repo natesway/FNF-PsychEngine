@@ -34,6 +34,9 @@ jobs:
           sudo apt-get install vlc-bin
           sudo apt-get install libluajit-5.1-2
           sudo apt-get install libluajit-5.1-dev
+          sudo apt-get install glibc-source
+          sudo apt-get install libidn12
+          sudo apt-get install libidn-dev
           haxelib setup ~/haxelib
           haxelib install hxcpp > /dev/null --quiet
           haxelib install lime
