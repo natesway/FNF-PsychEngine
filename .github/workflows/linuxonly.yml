@@ -48,7 +48,7 @@ jobs:
           haxelib install SScript
           haxelib install hxjsonast
           haxelib install hxcodec 2.6.1
-          haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
+          haxelib git linc_luajit https://github.com/superpowers04/linc_luajit.git
           haxelib install hscript
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
