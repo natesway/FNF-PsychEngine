@@ -49,7 +49,7 @@
       "name": "hxCodec",
       "type": "git",
       "dir": null,
-      "ref": "develop",
+      "ref": "main",
       "url": "https://github.com/polybiusproxy/hxCodec"
     },
     {
