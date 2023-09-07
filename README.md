@@ -2,7 +2,7 @@
 Engine Based on [Psych Engine 0.7.1h](https://github.com/ShadowMario/FNF-PsychEngine), intended to be on mods like Vs. Swedesmen.
 
 ## Upcomming/Planned features
-- [ ] Linux MP4 support
+- [x] Linux MP4 support
 - [ ] Loading screen
 - [ ] 32 Bit PC support
 - [ ] \(Maybe) MacOS support
