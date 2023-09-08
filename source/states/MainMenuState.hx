@@ -13,6 +13,9 @@ import lime.app.Application;
 import objects.AchievementPopup;
 import states.editors.MasterEditorMenu;
 import options.OptionsState;
+import GameJolt;
+import GameJolt.GameJoltAPI;
+import flixel.FlxState;
 
 class MainMenuState extends MusicBeatState
 {
@@ -235,7 +238,8 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new ModsMenuState());
 									#end
 									case 'awards':
-										MusicBeatState.switchState(new AchievementsMenuState());
+								//		MusicBeatState.switchState(new AchievementsMenuState());
+										FlxG.switchState(new GameJoltLogin());
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
