@@ -25,6 +25,8 @@ class OptionsState extends MusicBeatState
 				openSubState(new options.GameplaySettingsSubState());
 			case 'Adjust Delay and Combo':
 				MusicBeatState.switchState(new options.NoteOffsetState());
+			case 'Gamejolt':
+				FlxG.switchState(new GameJoltLogin());
 		}
 	}
 
