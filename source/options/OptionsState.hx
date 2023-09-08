@@ -2,6 +2,9 @@ package options;
 
 import states.MainMenuState;
 import backend.StageData;
+import GameJolt;
+import GameJolt.GameJoltAPI;
+import flixel.FlxState;
 
 class OptionsState extends MusicBeatState
 {
