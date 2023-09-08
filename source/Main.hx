@@ -15,6 +15,10 @@ import openfl.display.StageScaleMode;
 import lime.app.Application;
 import states.TitleState;
 
+#if linux
+import lime.graphics.Image;
+#end
+
 //crash handler stuff
 #if CRASH_HANDLER
 import openfl.events.UncaughtErrorEvent;
@@ -99,6 +103,11 @@ class Main extends Sprite
 		if(fpsVar != null) {
 			fpsVar.visible = ClientPrefs.data.showFPS;
 		}
+		#end
+
+		#if linux
+		var icon = Image.fromFile("icon.png");
+		Lib.current.stage.window.setIcon(icon);
 		#end
 
 		#if html5
