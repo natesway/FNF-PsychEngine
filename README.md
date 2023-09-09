@@ -6,7 +6,7 @@ Engine Based on [Psych Engine 0.7.1h](https://github.com/ShadowMario/FNF-PsychEn
 - [x] Linux MP4 support
 - [ ] Loading screen
 - [ ] 32 Bit PC support
-- [ ] \(Maybe) MacOS support
+- [ ] MacOS support
 - [ ] The actual mod
 - [x] Intro text
 - [ ] Everything else
