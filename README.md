@@ -1,5 +1,6 @@
 # Friday Night Funkin' - Shattered Engine
 Engine Based on [Psych Engine 0.7.1h](https://github.com/ShadowMario/FNF-PsychEngine), intended to be on mods like Vs. Swedesmen.
+[![wakatime](https://wakatime.com/badge/user/8f1fec2f-7186-44c1-b5ed-fe095d0dd9f6/project/78f2dca6-84ee-4419-a79b-486e90b6d15d.svg)](https://wakatime.com/badge/user/8f1fec2f-7186-44c1-b5ed-fe095d0dd9f6/project/78f2dca6-84ee-4419-a79b-486e90b6d15d)
 
 ## Upcomming/Planned features
 - [x] Linux MP4 support
