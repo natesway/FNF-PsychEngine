@@ -238,8 +238,8 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new ModsMenuState());
 									#end
 									case 'awards':
-								//		MusicBeatState.switchState(new AchievementsMenuState());
-										FlxG.switchState(new GameJoltLogin());
+										MusicBeatState.switchState(new AchievementsMenuState());
+								//		FlxG.switchState(new GameJoltLogin());
 									case 'credits':
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
