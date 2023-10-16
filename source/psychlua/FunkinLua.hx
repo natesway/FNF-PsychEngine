@@ -36,7 +36,7 @@ import substates.GameOverSubstate;
 
 import psychlua.LuaUtils;
 import psychlua.LuaUtils.LuaTweenOptions;
-#if (SScript >= "3.0.0")
+#if SScript
 import psychlua.HScript;
 #end
 import psychlua.DebugLuaText;
@@ -56,7 +56,7 @@ class FunkinLua {
 	public var scriptName:String = '';
 	public var closed:Bool = false;
 
-	#if (SScript >= "3.0.0")
+	#if SScript
 	public var hscript:HScript = null;
 	#end
 	
@@ -1425,7 +1425,7 @@ class FunkinLua {
 		});
 
 		#if desktop DiscordClient.addLuaCallbacks(lua); #end
-		#if (SScript >= "3.0.0") HScript.implement(this); #end
+		#if SScript HScript.implement(this); #end
 		ReflectionFunctions.implement(this);
 		TextFunctions.implement(this);
 		ExtraFunctions.implement(this);
